@@ -20,4 +20,4 @@ const runEvenGame = () => {
   return runGameLogic(rounds, description);
 };
 
-export default runEvenGame();
+export default runEvenGame;
