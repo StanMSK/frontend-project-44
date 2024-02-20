@@ -1,5 +1,4 @@
 import getRandomNumber from '../utils.js';
-
 import { runGameLogic, roundNumber } from '../gameLogic.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
