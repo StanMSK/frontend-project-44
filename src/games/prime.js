@@ -1,5 +1,5 @@
 import getRandomNumber from '../utils.js';
-import { runGameLogic, roundNumber } from '../gameLogic.js';
+import { runGame } from '../gameLogic.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -21,12 +21,6 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
 
-const runPrimeGame = () => {
-  const rounds = [];
-  for (let i = 0; i < roundNumber; i += 1) {
-    rounds[i] = generateRound();
-  }
-  return runGameLogic(rounds, description);
-};
+function runPrimeGame() { runGame(generateRound, description); }
 
 export default runPrimeGame;
