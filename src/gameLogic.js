@@ -22,11 +22,3 @@ export const runGameLogic = (rounds, description) => {
 
   console.log(`Congratulations, ${name}!`);
 };
-
-export function runGame(startRound, description) {
-  const rounds = [];
-  for (let i = 0; i < roundNumber; i += 1) {
-    rounds[i] = startRound();
-  }
-  return runGameLogic(rounds, description);
-}
